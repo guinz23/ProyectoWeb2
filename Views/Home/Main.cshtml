@@ -1,0 +1,193 @@
+@{
+    Layout = "_Layout2";
+}
+
+<nav>
+    <div class="teal darken-4 nav-wrapper">
+        <a class="brand-logo" href="#!">
+            Unix.company
+        </a>
+        <a class="button-collapse" data-activates="slide-out" href="#">
+            <i class="material-icons">
+                menu
+            </i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a sp-area="" asp-controller="Home" asp-action="Main" data-target="modal1" class=" modal-trigger" >
+                   Main
+                </a>
+            </li>
+            <li>
+                <a  data-target="modal1" class=" modal-trigger" >
+                   Login
+                </a>
+            </li>
+            <li>
+                <a  data-target="modal2" class=" modal-trigger" >
+                   Sing In
+                </a>
+            </li>
+            <li>
+                <a  data-target="modal1" class=" modal-trigger" >
+                   Contact
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav>
+<ul class="side-nav fixed" id="slide-out" style="position: absolute; top: auto;">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="https://static3.upandscrap.com/catalog/product/cache/4/image/400x/602f0fa2c1f0d1ba5e241f914e856ff9/0/0/0000375756.jpg">
+                        </img>
+                    </div>
+                    <a href="#!user">
+                        <img class="circle" src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user.png"/>
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name">
+                            John Doe
+                        </span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">
+                            jdandturk@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">
+                        cloud
+                    </i>
+                    First Link With Icon
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    Second Link
+                </a>
+            </li>
+            <li>
+                <div class="divider">
+                </div>
+            </li>
+            <li>
+                <a class="subheader">
+                    Subheader
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!">
+                    Third Link With Waves
+                </a>
+            </li>
+        </ul>
+ <div id="con">
+     1fdsghngfbdfdsfgdscdvdsdvdgfbgffjghgffhgjmhgfdsbgdvsdvfbngbfsdghfdsfdnbvdcsb cnfgnn
+     1fdsghngfbdfdsfgdscdvdsdvdgfbgffjghgffhgjmhgfdsbgdvsdvfbngbfsdghfdsfdnbvdcsb cnfgnn
+     fdsghngfbdfdsfgdscdvdsdvdgfbgffjghgffhgjmhgfdsbgdvsdvfbngbfsdghfdsfdnbvdcsb cnfgnn
+     fdsghngfbdfdsfgdscdvdsdvdgfbgffjghgffhgjmhgfdsbgdvsdvfbngbfsdghfdsfdnbvdcsb cnfgnn
+     fdsghngfbdfdsfgdscdvdsdvdgfbgffjghgffhgjmhgfdsbgdvsdvfbngbfsdghfdsfdnbvdcsb cnfgnn
+ </div>
+  <!-- Modal1 Structure -->
+  <div style="overflow-y:hidden;" id="modal1" class="modal modal-fixed-footer  ">
+    <div  style="overflow-x:hidden;" class="modal-content">
+      <h4 id="text-modal" class="center">Login</h4>
+      
+  <div class="row ">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field ">
+          <i class="material-icons prefix">person</i>
+          <input id="icon_prefix" type="text" class="validate" required>
+          <label for="icon_prefix">Usuario/Correo</label>
+        </div>
+        <div class="input-field ">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate" required>
+          <label for="icon_telephone">Contraseña</label>
+        </div>
+      </div>
+    </form>
+  </div>
+    </div>
+    <div class="modal-footer green darken-3">
+    <h4 class=" center"><a href="#!" id="button-modal" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a></h4>
+    </div>
+  </div>
+  
+  <!-- Modal2 Structure -->
+  <div style="overflow-y:hidden;" id="modal2" class="modal modal-fixed-footer ">
+    <div  style="overflow-x:hidden;" class="modal-content">
+      <h4 id="text-modal" class="center">Sing In</h4>
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate" required>
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6"> 
+          <input id="Apellido" type="text" class="validate" required>
+          <label for="Apellido">Apellido</label>
+        </div>
+         <div class="input-field col s6">
+          <input id="telefono" type="text" class="validate" required>
+          <label for="telefono">Telefono</label>
+        </div>
+         <div class="input-field col s6">
+           <input id="email" type="email" class="validate" required>
+          <label for="last_name">Correo</label>
+        </div>
+        <div class="input-field col s6">
+           <input id="contraseña" type="password" class="validate" required>
+          <label for="last_name">Contraseña</label>
+        </div>
+        <div class="input-field col s6">
+           <input id="confirmarContraseña" type="password" class="validate">
+          <label for="last_name">Confirmar Contraseña</label>
+        </div>
+      </div>
+     
+    </form>
+  </div>
+        
+    </div>
+    <div class="modal-footer green darken-3">
+    <h4 class=" center"><a href="#!" id="button-modal" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a></h4>
+    </div>
+  </div>
+
+    <script>
+        $(".button-collapse").sideNav();
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        
+    </script>
+     <script>
+         
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+     </script>
+      <script type="text/javascript">
+        $('.button-collapse').sideNav({
+      menuWidth: 300, 
+      edge: 'left', 
+      closeOnClick: true,
+      draggable: true, 
+      onOpen: function(el) {  },
+      onClose: function(el) {  }
+    }
+  );
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+     
+    </script>
+    
