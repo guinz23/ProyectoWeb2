@@ -14,33 +14,33 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Título_reunión" class="control-label"></label>
+                <label asp-for="Título_reunión" class="control-label blue-text"></label>
                 <input asp-for="Título_reunión" class="form-control" />
                 <span asp-validation-for="Título_reunión" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Fecha_Hora" class="control-label"></label>
+                <label asp-for="Fecha_Hora" class="control-label blue-text"></label>
                 <input asp-for="Fecha_Hora" class="form-control" />
                 <span asp-validation-for="Fecha_Hora" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Usuarioid" class="control-label"></label>
+                <label asp-for="Usuarioid" class="control-label blue-text"></label>
                 <select asp-for="Usuarioid" class="browser-default" asp-items="ViewBag.Usuarioid"></select>
             </div>
             <br />
             <div class="form-group">
-                <label asp-for="Clienteid" class="control-label"></label>
+                <label asp-for="Clienteid" class="control-label blue-text"></label>
                 <select asp-for="Clienteid" class="browser-default" asp-items="ViewBag.Clienteid"></select>
             </div>
             <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="waves-effect waves-light btn" />
+                <input type="submit" value="Create" class="wbtn-floating btn-large waves-effect waves-light green" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" asp-action="Index">Back to List</a>
 </div>
 

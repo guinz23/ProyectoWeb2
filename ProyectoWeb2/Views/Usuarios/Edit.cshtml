@@ -15,34 +15,34 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
-                <label asp-for="usuario" class="control-label"></label>
+                <label asp-for="usuario" class="control-label blue-text"></label>
                 <input asp-for="usuario" class="form-control" />
                 <span asp-validation-for="usuario" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="correo" class="control-label"></label>
+                <label asp-for="correo" class="control-label blue-text"></label>
                 <input asp-for="correo" class="form-control" />
                 <span asp-validation-for="correo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="contraseña" class="control-label"></label>
+                <label asp-for="contraseña" class="control-label blue-text"></label>
                 <input asp-for="contraseña" class="form-control" />
                 <span asp-validation-for="contraseña" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rol" class="control-label"></label>
+                <label asp-for="rol" class="control-label blue-text"></label>
                 <input asp-for="rol" class="form-control" />
                 <span asp-validation-for="rol" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="waves-effect waves-light btn"/>
+                <input type="submit" value="Save" class="btn-floating btn-large waves-effect waves-light green"/>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -58,5 +58,11 @@ namespace ProyectoWeb2.Controllers
             }
             return View();
         }
+        public IActionResult Logout() {
+
+            HttpContext.Session.Remove("user");
+            HttpContext.Session.Remove("rol");
+            return View("Index");
+        }
     }
 }

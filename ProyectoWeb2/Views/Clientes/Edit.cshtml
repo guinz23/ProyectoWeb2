@@ -15,44 +15,53 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
+                <label asp-for="Nombre" class="control-label blue-text"></label>
                 <input asp-for="Nombre" class="form-control" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cedula_Juridica" class="control-label"></label>
+                <label asp-for="cedula_Juridica" class="control-label blue-text"></label>
                 <input asp-for="cedula_Juridica" class="form-control" />
                 <span asp-validation-for="cedula_Juridica" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="pagina_Web" class="control-label"></label>
+                <label asp-for="pagina_Web" class="control-label blue-text"></label>
                 <input asp-for="pagina_Web" class="form-control" />
                 <span asp-validation-for="pagina_Web" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="direccion_Fisica" class="control-label"></label>
+                <label asp-for="direccion_Fisica" class="control-label blue-text"></label>
                 <input asp-for="direccion_Fisica" class="form-control" />
                 <span asp-validation-for="direccion_Fisica" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="telefono" class="control-label"></label>
+                <label asp-for="telefono" class="control-label blue-text"></label>
                 <input asp-for="telefono" class="form-control" />
                 <span asp-validation-for="telefono" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="sector" class="control-label"></label>
-                <input asp-for="sector" class="form-control" />
+                <label class="control-label blue-text">Sector</label>
+                <select asp-for="sector" class="browser-default">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="Educacion">Eduacion</option>
+                    <option value="Industria">Industria</option>
+                    <option value="Agricultura">Agricultura</option>
+                    <option value="Manufactura">Manufactura</option>
+                    <option value=" Servicios"> Servicios</option>
+                    <option value="Otros">Otros</option>
+                </select>
                 <span asp-validation-for="sector" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Save" class="waves-effect waves-light btn" />
+                <input type="submit" value="Save" class="btn-floating btn-large waves-effect waves-light blue" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+    <a  class="btn-floating btn-large waves-effect waves-light green" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

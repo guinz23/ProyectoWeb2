@@ -13,40 +13,41 @@
 <table class="responsive-table"style="color:white">
     <thead>
         <tr style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+            <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+                @Html.DisplayNameFor(model => model.Título_reunión)
+            </th>
                 <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
-                    @Html.DisplayNameFor(model => model.Título_reunión)
-                </th>
-                <th>
                     @Html.DisplayNameFor(model => model.Fecha_Hora)
                 </th>
-            <th>
+            <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayNameFor(model => model.Cliente.Nombre)
             </th>
-            <th>
+            <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayNameFor(model => model.Usuario.usuario)
             </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;" >
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayFor(modelItem => item.Título_reunión)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayFor(modelItem => item.Fecha_Hora)
             </td>
-            <td>
+         
+            <td  style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayFor(modelItem => item.Cliente.Nombre)
             </td>
-            <td>
+            <td  style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 @Html.DisplayFor(modelItem => item.Usuario.usuario)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            <td  style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+                <a asp-action="Edit" asp-route-id="@item.id" class="Small material-icons">create</a>
+                <a asp-action="Delete" asp-route-id="@item.id" class="Small material-icons">delete_forever</a>
+                <a asp-action="Details" asp-route-id="@item.id" class="Small material-icons">description</a>
             </td>
         </tr>
 }

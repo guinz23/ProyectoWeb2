@@ -15,44 +15,44 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
+                <label asp-for="nombre" class="control-label blue-text"></label>
                 <input asp-for="nombre" class="form-control" />
                 <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="apellidos" class="control-label"></label>
+                <label asp-for="apellidos" class="control-label blue-text"></label>
                 <input asp-for="apellidos" class="form-control" />
                 <span asp-validation-for="apellidos" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Correo_electrónico" class="control-label"></label>
+                <label asp-for="Correo_electrónico" class="control-label blue-text"></label>
                 <input asp-for="Correo_electrónico" class="form-control" />
                 <span asp-validation-for="Correo_electrónico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Número_telefónico" class="control-label"></label>
+                <label asp-for="Número_telefónico" class="control-label blue-text"></label>
                 <input asp-for="Número_telefónico" class="form-control" />
                 <span asp-validation-for="Número_telefónico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Puesto" class="control-label"></label>
+                <label asp-for="Puesto" class="control-label blue-text"></label>
                 <input asp-for="Puesto" class="form-control" />
                 <span asp-validation-for="Puesto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Clienteid" class="control-label"></label>
+                <label asp-for="Clienteid" class="control-label blue-text"></label>
                 <select asp-for="Clienteid" class="browser-default" asp-items="ViewBag.Clienteid"></select>
                 <span asp-validation-for="Clienteid" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
-                <input type="submit" value="Save" class="waves-effect waves-light btn"/>
+                <input type="submit" value="Save" class="btn-floating btn-large waves-effect waves-light blue"/>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+    <a class="btn-floating btn-large waves-effect waves-light green" asp-action="Index">Back to List</a>
 </div>
 

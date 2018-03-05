@@ -10,52 +10,58 @@
 <p>
     <a class="waves-effect waves-light btn" asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="responsive-table"style="color:white">
     <thead>
-        <tr>
-                <th>
+        <tr  style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.Nombre)
                 </th>
-                <th>
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.cedula_Juridica)
                 </th>
-                <th>
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.pagina_Web)
                 </th>
-                <th>
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.direccion_Fisica)
                 </th>
-                <th>
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.telefono)
                 </th>
-                <th>
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                     @Html.DisplayNameFor(model => model.sector)
                 </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+          
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+          
                 @Html.DisplayFor(modelItem => item.cedula_Juridica)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+           
                 @Html.DisplayFor(modelItem => item.pagina_Web)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+         
                 @Html.DisplayFor(modelItem => item.direccion_Fisica)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+        
                 @Html.DisplayFor(modelItem => item.telefono)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+           
                 @Html.DisplayFor(modelItem => item.sector)
             </td>
-            <td>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
                 <a asp-action="Edit" asp-route-id="@item.id" class="Small material-icons">create</a>
                 <a asp-action="Delete" asp-route-id="@item.id" class="Small material-icons">delete_forever</a>
                 <a asp-action="Details" asp-route-id="@item.id" class="Small material-icons">description</a>

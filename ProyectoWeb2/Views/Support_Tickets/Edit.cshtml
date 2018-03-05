@@ -2,10 +2,11 @@
 
 @{
     ViewData["Title"] = "Edit";
- 
+    Layout = "_Layout2";
+
 }
 
-<h2>Edit</h2>
+<h2>Editar</h2>
 
 <h4>Support_Tickets</h4>
 <hr />
@@ -15,38 +16,38 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
-                <label asp-for="Título_Problema" class="control-label"></label>
+                <label asp-for="Título_Problema" class="control-label blue-text"></label>
                 <input asp-for="Título_Problema" class="form-control" />
                 <span asp-validation-for="Título_Problema" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Detalle_del_problema" class="control-label"></label>
+                <label asp-for="Detalle_del_problema" class="control-label blue-text"></label>
                 <input asp-for="Detalle_del_problema" class="form-control" />
                 <span asp-validation-for="Detalle_del_problema" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Quién_reporta_el_problema" class="control-label"></label>
+                <label asp-for="Quién_reporta_el_problema" class="control-label blue-text"></label>
                 <input asp-for="Quién_reporta_el_problema" class="form-control" />
                 <span asp-validation-for="Quién_reporta_el_problema" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Clienteid" class="control-label"></label>
-                <select asp-for="Clienteid" class="browser-default" asp-items="ViewBag.Clienteid"></select>
+                <label asp-for="Clienteid" class="control-label blue-text"></label>
+                <select asp-for="Clienteid" class="browser-default waves-light blue" asp-items="ViewBag.Clienteid"></select>
                 <span asp-validation-for="Clienteid" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
-                <label asp-for="Estado_actual" class="control-label"></label>
-                <input asp-for="Estado_actual" class="form-control" />
+                <label asp-for="Estado_actual" class="control-label blue-text"></label>
+                <input asp-for="Estado_actual" class="form-control " />
                 <span asp-validation-for="Estado_actual" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save"  class="waves-effect waves-light btn"/>
+                <input type="submit" value="Save"  class="btn-floating btn-large waves-effect waves-light green"/>
             </div>
         </form>
     </div>
 </div>
 <div>
-    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+    <a  class="btn-floating btn-large waves-effect waves-light blue" asp-action="Index">Back to List</a>
 </div>
 
