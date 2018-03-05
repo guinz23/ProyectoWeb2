@@ -1,0 +1,55 @@
+﻿@model ProyectoWeb2.Models.Clientes
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_Layout2";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.cedula_Juridica)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cedula_Juridica)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pagina_Web)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pagina_Web)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion_Fisica)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.direccion_Fisica)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sector)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sector)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="waves-effect waves-light btn" asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+</div>

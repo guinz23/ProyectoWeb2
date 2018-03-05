@@ -1,0 +1,43 @@
+﻿@model ProyectoWeb2.Models.Reuniones
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_Layout2";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reuniones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Título_reunión)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Título_reunión)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Hora)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Hora)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a  class="waves-effect waves-light btn" asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+</div>

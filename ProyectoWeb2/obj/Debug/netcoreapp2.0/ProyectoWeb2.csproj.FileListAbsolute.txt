@@ -1,0 +1,11 @@
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\bin\Debug\netcoreapp2.0\ProyectoWeb2.deps.json
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\bin\Debug\netcoreapp2.0\ProyectoWeb2.runtimeconfig.json
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\bin\Debug\netcoreapp2.0\ProyectoWeb2.runtimeconfig.dev.json
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\bin\Debug\netcoreapp2.0\ProyectoWeb2.dll
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\bin\Debug\netcoreapp2.0\ProyectoWeb2.pdb
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.AssemblyInfo.cs
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.dll
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.pdb
+C:\Users\usuario\source\repos\ProyectoWeb2\ProyectoWeb2\obj\Debug\netcoreapp2.0\ProyectoWeb2.csprojResolveAssemblyReference.cache

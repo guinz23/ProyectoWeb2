@@ -1,0 +1,48 @@
+﻿@model ProyectoWeb2.Models.Support_Tickets
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Support_Tickets</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Título_Problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Título_Problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalle_del_problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Detalle_del_problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quién_reporta_el_problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quién_reporta_el_problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_actual)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado_actual)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a  class="waves-effect waves-light btn" asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,51 @@
+﻿@model ProyectoWeb2.Models.Support_Tickets
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Support_Tickets</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Título_Problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Título_Problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalle_del_problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Detalle_del_problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quién_reporta_el_problema)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quién_reporta_el_problema)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_actual)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado_actual)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete"  class="waves-effect waves-light btn" /> |
+        <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+    </form>
+</div>

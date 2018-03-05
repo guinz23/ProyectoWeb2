@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProyectoWeb2.Models.Reuniones>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout2";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a class="waves-effect waves-light btn" asp-action="Create">Create New</a>
+</p>
+<table class="responsive-table"style="color:white">
+    <thead>
+        <tr style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+                <th style="width: auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;">
+                    @Html.DisplayNameFor(model => model.Título_reunión)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fecha_Hora)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario.usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td style="width:  auto;text-align: left;vertical-align: top; border: 1px solid #000; border-spacing: 0;" >
+                @Html.DisplayFor(modelItem => item.Título_reunión)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha_Hora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.usuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

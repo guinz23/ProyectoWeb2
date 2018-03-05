@@ -1,0 +1,52 @@
+﻿@model ProyectoWeb2.Models.Support_Tickets
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_Layout2";
+}
+
+<h2>Create</h2>
+
+<h4>Support_Tickets</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Título_Problema" class="control-label"></label>
+                <input asp-for="Título_Problema" class="form-control" />
+                <span asp-validation-for="Título_Problema" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Detalle_del_problema" class="control-label"></label>
+                <input asp-for="Detalle_del_problema" class="form-control" />
+                <span asp-validation-for="Detalle_del_problema" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quién_reporta_el_problema" class="control-label"></label>
+                <input asp-for="Quién_reporta_el_problema" class="form-control" />
+                <span asp-validation-for="Quién_reporta_el_problema" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clienteid" class="control-label"></label>
+                <select class="browser-default" asp-for="Clienteid"  asp-items="ViewBag.Clienteid"></select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Estado_actual" class="control-label"></label>
+                <input asp-for="Estado_actual" class="form-control" />
+                <span asp-validation-for="Estado_actual" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="waves-effect waves-light btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+</div>
+

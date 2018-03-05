@@ -1,0 +1,60 @@
+﻿@model ProyectoWeb2.Models.Clientes
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_Layout2";
+}
+
+<h2>Edit</h2>
+
+<h4>Clientes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cedula_Juridica" class="control-label"></label>
+                <input asp-for="cedula_Juridica" class="form-control" />
+                <span asp-validation-for="cedula_Juridica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pagina_Web" class="control-label"></label>
+                <input asp-for="pagina_Web" class="form-control" />
+                <span asp-validation-for="pagina_Web" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="direccion_Fisica" class="control-label"></label>
+                <input asp-for="direccion_Fisica" class="form-control" />
+                <span asp-validation-for="direccion_Fisica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefono" class="control-label"></label>
+                <input asp-for="telefono" class="form-control" />
+                <span asp-validation-for="telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sector" class="control-label"></label>
+                <input asp-for="sector" class="form-control" />
+                <span asp-validation-for="sector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="waves-effect waves-light btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a  class="waves-effect waves-light btn" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

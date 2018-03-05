@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProyectoWeb2.Models.Clientes>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout2";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a class="waves-effect waves-light btn" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.cedula_Juridica)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.pagina_Web)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.direccion_Fisica)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.sector)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cedula_Juridica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pagina_Web)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion_Fisica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sector)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id" class="Small material-icons">create</a>
+                <a asp-action="Delete" asp-route-id="@item.id" class="Small material-icons">delete_forever</a>
+                <a asp-action="Details" asp-route-id="@item.id" class="Small material-icons">description</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
